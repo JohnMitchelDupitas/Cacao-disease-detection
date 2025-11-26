@@ -1,0 +1,14 @@
+# YOLOv8 Cacao Disease Detection Dataset
+path: ./dataset  # or absolute path if needed
+
+train: images/train
+val: images/val
+
+nc: 5  # number of classes
+
+names:
+  0: Health
+  1: carmenta foraseminis
+  2: moniliophthora perniciosa
+  3: moniliophthora roreri
+  4: phytophthora palmivora

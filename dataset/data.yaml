@@ -1,0 +1,11 @@
+path: ./dataset
+
+train: images/train
+val: images/val
+
+names:
+  0: Health
+  1: carmenta foraseminis
+  2: moniliophthora perniciosa
+  3: moniliophthora roreri
+  4: phytophthora palmivora

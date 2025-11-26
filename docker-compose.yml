@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  ml_api:
+    build: .
+    container_name: cacao-ml-api
+    env_file:
+      - .env
+    ports:
+      - "${PORT:-8000}:${PORT:-8000}"
+    volumes:
+      - ./runs:/app/runs  # if you want to keep model files accessible
+      - ./logs:/var/log/ml_api
+    restart: unless-stopped
