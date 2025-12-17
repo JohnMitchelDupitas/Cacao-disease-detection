@@ -1,12 +1,17 @@
-# Cacao ML API (production-ready FastAPI)
+# 🧠 Cacao Disease Detection ML API (YOLOv8)
 
-## Requirements
-- Python 3.9+ (3.11 recommended)
-- GPU recommended for inference speed
-- Docker (optional)
+This directory contains the machine learning microservice for **AIM-CaD**. It utilizes **YOLOv8 (You Only Look Once)** to perform real-time object detection on cacao pods, identifying diseases such as **Black Pod Rot** and **Vascular Streak Dieback (VSD)**.
 
-## Setup (local)
-1. Copy `.env.example` to `.env` and set API_KEY, MODEL_PATH, MODEL_DEVICE, ALLOWED_ORIGINS.
-2. Install deps:
-   ```bash
-   py -m pip install -r requirements.txt
+This API serves as the inference engine, accepting images via HTTP requests and returning JSON responses with bounding box coordinates and confidence scores.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Language:** Python 3.10+
+* **Model Architecture:** [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) (Nano Version)
+* **API Framework:** FastAPI (or Flask)
+* **Server:** Uvicorn
+* **Computer Vision:** OpenCV (`opencv-python`)
+
+---
