@@ -1,4 +1,4 @@
-# FarmIQ Cacao ML API (production-ready FastAPI)
+# Cacao ML API (production-ready FastAPI)
 
 ## Requirements
 - Python 3.9+ (3.11 recommended)
